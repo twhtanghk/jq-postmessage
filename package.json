@@ -1,0 +1,35 @@
+{
+  "name": "jq-postmessage",
+  "version": "0.0.1",
+  "description": "Cross browser communication via window.postMessage",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twhtanghk/jq-postmessage.git"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "author": "Tommy Tang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twhtanghk/jq-postmessage/issues"
+  },
+  "homepage": "https://github.com/twhtanghk/jq-postmessage",
+  "dependencies": {
+    "shortid": "^2.2.2"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.3",
+    "coffee-script": "^1.9.3",
+    "convert-source-map": "^1.1.1",
+    "debowerify": "^1.3.1",
+    "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1",
+    "through": "^2.3.7",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
