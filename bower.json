@@ -1,0 +1,21 @@
+{
+  "name": "jq-postmessage",
+  "version": "0.0.1",
+  "homepage": "https://github.com/twhtanghk/jq-postmessage",
+  "description": "Cross browser communication via window.postMessage",
+  "main": "./index.js",
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "authors": [
+    "Tommy Tang"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
