@@ -10,16 +10,15 @@
     last_cb = null;
     last_hash = document.location.hash;
     $.postMessage = function(message, target_url, target) {
-      var _ref;
       if (target == null) {
         target = window.parent;
       }
       if (!target_url) {
         return;
       }
-      message = (_ref = typeof message === 'string') != null ? _ref : {
-        message: $.param(message)
-      };
+      if (typeof message !== 'string') {
+        message = $.param(message);
+      }
       if (window.postMessage) {
         return target.postMessage(message, target_url.replace(/([^:]+:\/\/[^\/]+).*/, '$1'));
       } else {

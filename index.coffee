@@ -9,7 +9,8 @@ ret = (window, $) ->
 		if !target_url
 			return
 		
-		message = typeof message == 'string' ? message : $.param(message)
+		if typeof message != 'string'
+			message = $.param(message)
 		
 		if window.postMessage
 			target.postMessage message, target_url.replace /([^:]+:\/\/[^\/]+).*/, '$1'
