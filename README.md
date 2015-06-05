@@ -9,7 +9,7 @@ bower install jq-postmessage
 ## Usage
 ```
 # postMessage to parent window with token
-$.postMessage access_token: "1234567"
+$.postMessage access_token: "1234567", $location.absUrl()
 
 # set http header
 $.receiveMessage (event) ->
